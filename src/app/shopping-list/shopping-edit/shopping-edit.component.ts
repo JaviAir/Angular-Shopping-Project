@@ -16,7 +16,7 @@ export class ShoppingEditComponent implements OnInit {
   }
 
   onSubmit(name: string, amount: number) {
-    const newIngredient = new Ingredient(name, amount)
+    const newIngredient = new Ingredient(name, amount);
     this.ingredientAdded.emit(newIngredient);
   }
 }
