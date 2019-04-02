@@ -14,8 +14,8 @@
       <button type="button" class="btn btn-primary dropdown-toggle" (click)="callDirective()">Manage Recipe</button>
         <ul class="dropdown-menu" appDropdown > <!--must add show class here-->
           <li><a class="dropdown-item" style="cursor: pointer;" (click)="toShoppingList(recipe.ingredients)">To Shopping List</a></li>
-          <li><a class="dropdown-item" href="#">Edit Recipe</a></li>
-          <li><a class="dropdown-item" href="#">Delete Recipe</a></li>
+          <li><a class="dropdown-item" style="cursor: pointer;" routerLink="edit">Edit Recipe</a></li>
+          <li><a class="dropdown-item" style="cursor: pointer;">Delete Recipe</a></li>
         </ul>
     </div>
   </div>
